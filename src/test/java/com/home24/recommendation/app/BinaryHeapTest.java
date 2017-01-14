@@ -32,33 +32,42 @@ public class BinaryHeapTest extends TestCase {
         BinaryMinHeap<TestHeapObject> heap = new BinaryMinHeap(3, TestHeapObject.class);
         heap.insert(new TestHeapObject(4));
         assertEquals(1, heap.getHeapSize());
-        assertEquals(4, heap.findMin().value);
+        assertEquals(4, heap.getMin().value);
         heap.insert(new TestHeapObject(5));
         assertEquals(2, heap.getHeapSize());
-        assertEquals(4, heap.findMin().value);
+        assertEquals(4, heap.getMin().value);
         heap.insert(new TestHeapObject(3));
         assertEquals(3, heap.getHeapSize());
-        assertEquals(3, heap.findMin().value);
+        assertEquals(3, heap.getMin().value);
         heap.insert(new TestHeapObject(3));
         assertEquals(3, heap.getHeapSize());
-        assertEquals(3, heap.findMin().value);
+        assertEquals(3, heap.getMin().value);
         heap.insert(new TestHeapObject(4));
         assertEquals(3, heap.getHeapSize());
-        assertEquals(4, heap.findMin().value);
+        assertEquals(4, heap.getMin().value);
 
         heap = new BinaryMinHeap(3, TestHeapObject.class);
         heap.insert(new TestHeapObject(15));
         assertEquals(1, heap.getHeapSize());
-        assertEquals(15, heap.findMin().value);
+        assertEquals(15, heap.getMin().value);
         heap.insert(new TestHeapObject(10));
         assertEquals(2, heap.getHeapSize());
-        assertEquals(10, heap.findMin().value);
+        assertEquals(10, heap.getMin().value);
         heap.insert(new TestHeapObject(20));
         assertEquals(3, heap.getHeapSize());
-        assertEquals(10, heap.findMin().value);
+        assertEquals(10, heap.getMin().value);
         heap.insert(new TestHeapObject(17));
         assertEquals(3, heap.getHeapSize());
-        assertEquals(15, heap.findMin().value);
+        assertEquals(15, heap.getMin().value);
+/*
+        heap = new BinaryMinHeap(5, TestHeapObject.class);
+        heap.insert(new TestHeapObject(0));
+        heap.insert(new TestHeapObject(1));
+        heap.insert(new TestHeapObject(0));
+        heap.insert(new TestHeapObject(2));
+        heap.insert(new TestHeapObject(1));
+        heap.removeMin();
+        assertEquals(0, heap.getMin().value);*/
     }
 
 }

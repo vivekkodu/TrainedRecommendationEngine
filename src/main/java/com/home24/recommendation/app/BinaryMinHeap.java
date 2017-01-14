@@ -43,7 +43,7 @@ public class BinaryMinHeap<E extends Comparable<E>> {
         this.heapifyDown(0);
     }
 
-    public E findMin(){
+    public E getMin(){
         if(heapSize == 0){
             return null;
         }else{
@@ -98,7 +98,7 @@ public class BinaryMinHeap<E extends Comparable<E>> {
         }
 
         if(rootLargerThanLeftChild && rootLargerThanRightChild){
-            if(this.heap[2 * index + 1].compareTo(this.heap[2* index + 2]) > 0){
+            if(this.heap[2 * index + 1].compareTo(this.heap[2* index + 2]) < 0){
                 E temp = this.heap[index];
                 this.heap[index] = this.heap[2 * index + 1];
                 this.heap[2 * index + 1] = temp;

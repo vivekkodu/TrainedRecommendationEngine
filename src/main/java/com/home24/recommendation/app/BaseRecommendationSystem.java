@@ -14,6 +14,6 @@ public abstract class BaseRecommendationSystem {
         this.skuMap = skuMap;
     }
 
-    public abstract List<String> recomend(String sku, int numberOfRecommendations);
+    protected abstract List<String> recommend(String sku, int numberOfRecommendations);
 
 }
