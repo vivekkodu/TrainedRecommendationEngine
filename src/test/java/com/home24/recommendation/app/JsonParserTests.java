@@ -1,10 +1,8 @@
 package com.home24.recommendation.app;
 
-import junit.framework.Assert;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-
 import java.io.FileNotFoundException;
 import java.util.Map;
 

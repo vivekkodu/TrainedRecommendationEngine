@@ -1,7 +1,6 @@
 package com.home24.recommendation.app;
 
 import com.google.gson.Gson;
-
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.Map;

@@ -51,10 +51,6 @@ public class BinaryMinHeap<E extends Comparable<E>> {
         }
     }
 
-    public int getHeapSize(){
-        return this.heapSize;
-    }
-
     private void heapifyUp(int index){
         if (index == 0){
             return;
@@ -120,5 +116,9 @@ public class BinaryMinHeap<E extends Comparable<E>> {
             this.heap[2 * index + 1] = temp;
             heapifyDown(2 * index + 1);
         }
+    }
+
+    public int getHeapSize(){
+        return this.heapSize;
     }
 }

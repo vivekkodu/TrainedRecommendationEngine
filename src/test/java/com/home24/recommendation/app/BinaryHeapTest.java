@@ -4,7 +4,6 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
-
 /**
  * Created by VIVEK VERMA on 1/14/2017.
  */
@@ -59,7 +58,7 @@ public class BinaryHeapTest extends TestCase {
         heap.insert(new TestHeapObject(17));
         assertEquals(3, heap.getHeapSize());
         assertEquals(15, heap.getMin().value);
-/*
+
         heap = new BinaryMinHeap(5, TestHeapObject.class);
         heap.insert(new TestHeapObject(0));
         heap.insert(new TestHeapObject(1));
@@ -67,7 +66,7 @@ public class BinaryHeapTest extends TestCase {
         heap.insert(new TestHeapObject(2));
         heap.insert(new TestHeapObject(1));
         heap.removeMin();
-        assertEquals(0, heap.getMin().value);*/
+        assertEquals(0, heap.getMin().value);
     }
 
 }
