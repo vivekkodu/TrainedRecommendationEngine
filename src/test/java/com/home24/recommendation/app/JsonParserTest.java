@@ -9,14 +9,14 @@ import java.util.Map;
 /**
  * Created by VIVEK VERMA on 1/14/2017.
  */
-public class JsonParserTests extends TestCase
+public class JsonParserTest extends TestCase
 {
     /**
      * Create the test case
      *
      * @param testName name of the test case
      */
-    public JsonParserTests(String testName )
+    public JsonParserTest(String testName )
     {
         super( testName );
     }
@@ -26,7 +26,7 @@ public class JsonParserTests extends TestCase
      */
     public static Test suite()
     {
-        return new TestSuite( JsonParserTests.class );
+        return new TestSuite( JsonParserTest.class );
     }
 
     public void testParserOutput() throws FileNotFoundException, InterruptedException {

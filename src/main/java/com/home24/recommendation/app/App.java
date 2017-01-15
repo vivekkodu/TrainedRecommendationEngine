@@ -16,7 +16,6 @@ public class App
 
         // Parse the data file and create json object out of it
         Map inputSkus = JsonParser.parseFile(args[0]);
-        //Map inputSkus = JsonParser.parseFile("src\\data\\home24-test-data.json");
 
         // Initialize recommendation engine
         BaseRecommendationSystem recommendationSystem = new SearchBasedRecommendationSystem(inputSkus);

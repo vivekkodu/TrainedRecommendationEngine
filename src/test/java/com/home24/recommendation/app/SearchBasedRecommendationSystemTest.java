@@ -10,14 +10,14 @@ import java.util.Map;
 /**
  * Created by VIVEK VERMA on 1/14/2017.
  */
-public class SearchBasedRecommendationSystemTests extends TestCase
+public class SearchBasedRecommendationSystemTest extends TestCase
 {
     /**
      * Create the test case
      *
      * @param testName name of the test case
      */
-    public SearchBasedRecommendationSystemTests(String testName )
+    public SearchBasedRecommendationSystemTest(String testName )
     {
         super( testName );
     }
@@ -27,7 +27,7 @@ public class SearchBasedRecommendationSystemTests extends TestCase
      */
     public static Test suite()
     {
-        return new TestSuite( SearchBasedRecommendationSystemTests.class );
+        return new TestSuite( SearchBasedRecommendationSystemTest.class );
     }
 
     public void testRecommendations() throws FileNotFoundException {
